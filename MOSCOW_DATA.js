@@ -1,6 +1,6 @@
 var MOSCOW_DATA = {
 	type: 'FeatureCollection',
-	metadata: { name: 'Без названия', creator: 'Yandex Map Constructor' },
+	metadata: { name: 'Москва', creator: 'Yandex Map Constructor' },
 	features: [
 		{
 			type: 'Feature',
@@ -53,6 +53,7 @@ var MOSCOW_DATA = {
 				],
 			},
 			properties: {
+				description: '700',
 				fill: '#97a100',
 				'fill-opacity': 0.6,
 				stroke: '#97a100',
@@ -63,7 +64,7 @@ var MOSCOW_DATA = {
 		{
 			type: 'Feature',
 			id: 2,
-			geometry: { coordinates: [37.617698, 55.755864], type: 'Point' },
+			geometry: { type: 'Point', coordinates: [37.617698, 55.755864] },
 			properties: { description: 'Москва', 'marker-color': '#1e98ff' },
 		},
 	],
