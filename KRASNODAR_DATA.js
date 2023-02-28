@@ -1,7 +1,7 @@
 var KRASNODAR_DATA = {
 	type: 'FeatureCollection',
 	metadata: {
-		name: 'Доставка Краснодар',
+		name: 'Краснодар',
 		creator: 'Yandex Map Constructor',
 	},
 	features: [

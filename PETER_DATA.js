@@ -1,6 +1,6 @@
 var PETER_DATA = {
 	type: 'FeatureCollection',
-	metadata: { name: 'СПБ', creator: 'Yandex Map Constructor' },
+	metadata: { name: 'Санкт-Петербург', creator: 'Yandex Map Constructor' },
 	features: [
 		{
 			type: 'Feature',

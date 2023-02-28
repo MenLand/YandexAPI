@@ -8,7 +8,13 @@ $(() => {
 });
 
 const init = (ym) => {
-	const suggestView = new ym.SuggestView('suggest');
+	const suggestView = new ym.SuggestView('suggest', {
+		provider: {
+			suggest: function (request, options) {
+				return ymaps.suggest(GEO_DATA.metadata.name + ', ' + request);
+			},
+		},
+	});
 	const map = new ym.Map('map', {
 		center: [30.264981955459618, 59.9567962610097],
 		zoom: 9,
@@ -36,6 +42,8 @@ const init = (ym) => {
 			switch (addressType) {
 				case 'exact':
 					const deliveryAreas = ym.geoQuery(GEO_DATA).addToMap(map);
+
+					console.log(deliveryAreas);
 					deliveryArea = deliveryAreas
 						.searchContaining(geoObject)
 						.get(0);
